@@ -117,6 +117,37 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	ctx.stroke();//this code draws the bottom line
 	</script>
 	
+	<style>
+	.btn-group .button {
+	  background-color: #4169e1; /* blue */
+	  border: 1px solid white;
+	  color: white;
+	  padding: 15px 32px;/*created size of button*/
+	  text-align: center;/*centers button text*/
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;/*font size*/
+	  cursor: pointer;
+	  float: left;/*brings the buttons to the left*/
+	  /*this code serves to give the button its color,border,alignment,size,font size*/
+	}
+
+	.btn-group .button:not(:last-child) {
+	  border-right: none; /* Prevent double borders */
+	}
+
+	.btn-group .button:hover { /*adds hover feature*/
+	  background-color: #0a21cc;/*changes color to dark blue when hovered*/
+	}
+	</style>
+	
+	<div class="btn-group">
+	  <button class="button">Picture</button> <!--adds 4 buttons to screen-->
+	  <button class="button">Rectangle</button>
+	  <button class="button">Name</button>
+	  <button class="button">Clear</button>
+	</div>
+	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
