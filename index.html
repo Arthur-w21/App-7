@@ -42,19 +42,29 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	<script>
 	function rectangle() {
-	var c6 = document.getElementById ("c6"); 
-	var c6_context = c6.getContext ("2d"); 
-	c6_context.fillStyle = "#f00" ;
-	c6_context.fillRect (10,10,25,50); 
-	} 
+	var c = document.getElementById ("c6"); 
+	var ctx = c.getContext("2d");
+	ctx.moveTo(10,240);
+	ctx.lineTo(10,10);
+	//this code draws the left line
+	ctx.moveTo(10,10);
+	ctx.lineTo(340,10);
+	//this code draws the top line
+	ctx.moveTo(340,10);
+	ctx.lineTo(340,240);
+	//this code draws the right line
+	ctx.moveTo(340,240);
+	ctx.lineTo(10,240);
+	//this code draws the bottom line
+	ctx.stroke();
+    }
 
 	function text() {
 	var c6 = document.getElementById ("c6"); 
 	var c6_context = c6.getContext ("2d"); 
-	c6_context.fillStyle = '#00FF00';
-	c6_context.font = 'italic bold 30px sans-serif' ;
+	c6_context.font = '30px Arial' ;
 	c6_context.textBaseLine = 'bottom'; 
-	c6_context.fillText ('Arthur Williamson' ,50,100);
+	c6_context.fillText ('Arthur Williamson' ,60,140);
 	} 
 
 
