@@ -42,33 +42,33 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	<script>
 	function rectangle() {
-	var c6 = document.getElementById (“c6"); 
-	var c6_context = c6.getContext (“2d”); 
+	var c6 = document.getElementById ("c6"); 
+	var c6_context = c6.getContext ("2d"); 
 	c6_context.fillStyle = "#f00" ;
 	c6_context.fillRect (10,10,25,50); 
 	} 
 
 	function text() {
-	var c6 = document.getElementById (“c6); 
-	var c6_context = c6.getContext (“2d”); 
-	c6_context.fillStyle = ‘#00f00’;
-	c6_context.font = ‘italic bold 30px sans-serif’ ;
-	c6_context.textBaseLine = ‘bottom’; 
-	c6_context.fillText (‘Arthur Williamson’ ,50,100);
+	var c6 = document.getElementById ("c6"); 
+	var c6_context = c6.getContext ("2d"); 
+	c6_context.fillStyle = '#00FF00';
+	c6_context.font = 'italic bold 30px sans-serif' ;
+	c6_context.textBaseLine = 'bottom'; 
+	c6_context.fillText ('Arthur Williamson' ,50,100);
 	} 
 
 
 	function image() {
-	var c6 =document.getElementById (“c6); 
-	var c6_context = c6.getContext (“2d”); 
-	var image = document.getElementById(“virus”); 
+	var c6 =document.getElementById ("c6"); 
+	var c6_context = c6.getContext ("2d"); 
+	var image = document.getElementById("virus"); 
 	ctx.drawImage (img,100,100,100,100);
 	} 
 
 
 	function clear() {
-	var c6 = document.getElementById (“c6); 
-	var c6_context = c6.getContext (“2d”); 
+	var c6 = document.getElementById ("c6"); 
+	var c6_context = c6.getContext ("2d"); 
 	c6_context.clearRect(1,1,350,250); 
 	} 
 	</script>
@@ -105,9 +105,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <div id="content" class="w3-container">
 	
 <div>
-	<center><canvas id="c6" width="350" height="250" style="border:1px solid #000000;"> <!--this code provides a canavas to add things to-->
+	<center><canvas id="c6" width="350" height="250" style= "border :1px solid #000000;"> <!--this code provides a canavas to add things to-->
 		Your browser does not support the HTML5 canvas tag.</canvas></center> <!--this code provides a message if the code does not work-->
-
 	<div>
 	<center> <button onclick = "rectangle();return true;" > rectangle </button></center>
 	<center> <button onclick = "text();return true;" > Name </button></center>
