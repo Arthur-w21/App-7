@@ -73,16 +73,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
 	
-	<p>content goes here </p>
+	<p><button onclick="myCanvas()">Try it</button></p>
 	
-	<canvas id="myCanvas" width="250" height="100" style="border:1px solid #000000;">
+	<canvas id="myCanvas" width="300" height="100" style="border:1px solid #000000;">
 	Your browser does not support the HTML5 canvas tag.</canvas> <!--this code provides a canavas to add things to-->
 
 	<script>
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.font = "30px Arial";
-	ctx.fillText("Arthur Williamson",10,50);//this code allows text to show up on the canvas
+	ctx.fillText("Arthur Williamson",30,50);//this code allows text to show up on the canvas
 	</script>  
 	
 	<script>
@@ -97,22 +97,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.moveTo(10,10);
-	ctx.lineTo(240,10);
+	ctx.lineTo(290,10);
 	ctx.stroke();//this code draws the top line
 	</script>
 	
 	<script>
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	ctx.moveTo(240,10);
-	ctx.lineTo(240,90);//this code draws the right line
+	ctx.moveTo(290,10);
+	ctx.lineTo(290,90);//this code draws the right line
 	ctx.stroke();
 	</script>
 	
 	<script>
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	ctx.moveTo(240,90);
+	ctx.moveTo(290,90);
 	ctx.lineTo(10,90);
 	ctx.stroke();//this code draws the bottom line
 	</script>
