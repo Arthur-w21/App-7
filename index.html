@@ -40,48 +40,52 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 
-	<script>
+<script>
 	function rectangle() {
-	var c = document.getElementById ("c6"); 
-	var ctx = c.getContext("2d");
-	ctx.moveTo(10,240);
-	ctx.lineTo(10,10);
-	//this code draws the left line
-	ctx.moveTo(10,10);
-	ctx.lineTo(340,10);
-	//this code draws the top line
-	ctx.moveTo(340,10);
-	ctx.lineTo(340,240);
-	//this code draws the right line
-	ctx.moveTo(340,240);
-	ctx.lineTo(10,240);
-	//this code draws the bottom line
-	ctx.stroke();
-    }
+		var c = document.getElementById ("bc"); 
+		var ctx = c.getContext("2d");
+		ctx.moveTo(10,240);
+		ctx.lineTo(10,10);
+		//this code draws the left line
+		ctx.moveTo(10,10);
+		ctx.lineTo(340,10);
+		//this code draws the top line
+		ctx.moveTo(340,10);
+		ctx.lineTo(340,240);
+		//this code draws the right line
+		ctx.moveTo(340,240);
+		ctx.lineTo(10,240);
+		//this code draws the bottom line
+		ctx.stroke();
+		//comes together to draw a rectangle
+	}
 
 	function text() {
-	var c6 = document.getElementById ("c6"); 
-	var c6_context = c6.getContext ("2d"); 
-	c6_context.font = '30px Arial' ;
-	c6_context.textBaseLine = 'bottom'; 
-	c6_context.fillText ('Arthur Williamson' ,60,140);
+		var bc = document.getElementById ("bc"); 
+		var bc_context = bc.getContext ("2d"); 
+		bc_context.font = '30px Arial' ;
+		bc_context.textBaseLine = 'bottom'; 
+		bc_context.fillText ('Arthur Williamson' ,60,140);
+		//writes my name 
 	} 
 
 
 	function image() {
-	var c= document.getElementById ("c6"); 
-	var ctx=c.getContext ("2d"); 
-	var img= document.getElementById("virus"); 
-	ctx.drawImage (img,10,10,330,230);
+		var c= document.getElementById ("bc"); 
+		var ctx=c.getContext ("2d"); 
+		var img= document.getElementById("virus"); 
+		ctx.drawImage (img,10,10,330,230);
+		//puts an image 
 	} 
 
 
 	function clear_canvas() {
-	var c6 = document.getElementById ("c6"); 
-	var c6_context = c6.getContext ("2d"); 
-	c6_context.clearRect(1, 1, 350, 250); 
+		var bc = document.getElementById ("bc"); 
+		var bc_context = bc.getContext ("2d"); 
+		bc_context.clearRect(1, 1, 350, 250); 
+		//clears the canvas 
 	} 
-	</script>
+</script>
 
 <style>	
 .body {
@@ -114,49 +118,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
 	
-	
-	
-<!--
-	<script>
-	var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
-	ctx.font = "30px Arial";
-	ctx.fillText("Arthur Williamson",30,50);
-	//this code allows text to show up on the canvas
-	</script>  
-
-	<script>
-	var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
-	ctx.moveTo(10,90);
-	ctx.lineTo(10,10);
-	//this code draws the left line
-	ctx.moveTo(10,10);
-	ctx.lineTo(290,10);
-	//this code draws the top line
-	ctx.moveTo(290,10);
-	ctx.lineTo(290,90);
-	//this code draws the right line
-	ctx.moveTo(290,90);
-	ctx.lineTo(10,90);
-	//this code draws the bottom line
-	ctx.stroke();
-	</script>
--->
-	
-	
-
-	
-	
-	
-
-	
 	<p style="clear:both"><!--adds code to keep wording from getiing in the way of buttons--><br>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
 	<div>
-	<center><canvas id="c6" width="350" height="250" style= "border :1px solid #000000;"> <!--this code provides a canavas to add things to-->
+	<center><canvas id="bc" width="350" height="250" style= "border :1px solid #000000;"> <!--this code provides a canavas to add things to-->
 		Your browser does not support the HTML5 canvas tag.</canvas></center> <!--this code provides a message if the code does not work-->
 	</div>
 	
