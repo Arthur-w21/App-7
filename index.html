@@ -114,16 +114,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
 	
-<div>
+	<div>
 	<center><canvas id="c6" width="350" height="250" style= "border :1px solid #000000;"> <!--this code provides a canavas to add things to-->
 		Your browser does not support the HTML5 canvas tag.</canvas></center> <!--this code provides a message if the code does not work-->
-	<div>
-	<center> <button onclick = "rectangle();return true;" > rectangle </button></center>
-	<center> <button onclick = "text();return true;" > Name </button></center>
-	<center> <button onclick = "image();return true;" > image </button></center>
-	<center> <button onclick = "clear();return true;" > clear </button></center>
 	</div>
-</div>
 	
 	<img id="virus" src="https://cdn.hswstatic.com/gif/corona-virus-3D.jpg" alt="The Scream" width="0" height="0">
 	
@@ -159,7 +153,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 
 	
-<!--	
+	
 	<style>
 	.btn-group .button {
 	  background-color: #4169e1; /* blue */
@@ -185,12 +179,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	</style>
 	
 	<div class="btn-group">
-	  <button class="button">Picture</button> 
-	  <button class="button">Rectangle</button>
-	  <button class="button">Name</button>
-	  <button class="button">Clear</button>
+	  <button class="button"onclick = "rectangle();return true;" >Rectangle</button> 
+	  <button class="button" onclick = "text();return true;">Name</button>
+	  <button class="button" onclick = "image();return true;">Image</button>
+	  <button class="button"onclick = "clear();return true;">Clear</button>
+	<!--adds 4 buttons to screen-->
 	</div> 
-adds 4 buttons to screen-->
+
 	
 	<p style="clear:both"><!--adds code to keep wording from getiing in the way of buttons--><br>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
